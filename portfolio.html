@@ -212,8 +212,7 @@ referrerpolicy="no-referrer"
     </main> 
      <!-- Секція Футер-->
      <footer class="footer">
-        <div class="container">
-            <div class="footer-text">
+        <div class="footer-text container">
                 <div class="footer-two">
                     <a class="footer-logo link" href="./index.html">Web<span class="footer-logo-accent">Studio</span></a>
                         <address class="address">
@@ -263,8 +262,20 @@ referrerpolicy="no-referrer"
                             </li>
                         </ul>
                 </div>
-            </div>
-            </div>
+                <div class="footer-form">
+                    <h2 class="footer-title">Подпишитесь на рассылку</h2>
+                    <form class="footer-forms">
+                        <label class="footer-user-action">
+                            <input class="footer-input" type="text" name="user-email" placeholder="E-mail">
+                        </label>
+                        <button class="user-btn" type="submit">Подписаться<svg class="footer-btn" width="24" height="24">
+                        <use href="./images/icons.svg#icon-icon-send"></use> 
+                        </svg>
+                        </button>
+                    </form>
+                </div>
+        </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

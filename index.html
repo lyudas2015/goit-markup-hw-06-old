@@ -72,6 +72,55 @@ referrerpolicy="no-referrer"/>
                             <use href="./images/icons.svg#icon-close"></use>
                         </svg>
                     </button>
+                    <div class="modal-form">
+                    <form class="register-form">
+                        <strong class="modal-strong">Оставьте свои данные, мы вам перезвоним</strong>
+                    <label class="modal-label">
+                        <span class="modal-span">Имя</span>
+                        <input class="modal-input" type="text" name="user-name" placeholder="" />
+                        <svg  class="modal-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-person-blue"></use>
+                            <use href="./images/icons.svg#icon-person-black"></use>
+                        </svg>
+                    </label>
+
+                    <label class="modal-label">
+                        <span class="modal-span">Телефон</span>
+                        <input class="modal-input" type="text" name="user-phone" placeholder="" />
+                        <svg  class="modal-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-phone-black"></use>
+                        </svg>
+                    </label>
+
+                    <label class="modal-label">
+                        <span class="modal-span">Почта</span>
+                        <input class="modal-input" type="text" name="email" placeholder="" />
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-email-black"></use>
+                        </svg>
+                    </label>
+                    <label class="modal-label">
+                        <span class="modal-span">Комментарий</span>
+
+                        <textarea class="modal-textarea" name="user-message" rows="5" placeholder="Введите текст" minlength="3"></textarea>
+                    </label>
+                    <div class="checkbox-box">
+                    <label class="form-checkbox">
+						<input class="visually-hidden checkbox-input" type="checkbox" name="user-agreement" />
+						<span class="checkbox-span">
+							<svg class="checkbox-icon" width="16" height="15">
+								<use href="./images/icons.svg#icon-vector"></use>
+							</svg>
+						</span>
+						<span class="checkbox-agreement">
+                            Соглашаюсь с рассылкой и принимаю
+                            <a class="agreement link" href target="_blank" rel="noopener noreferrer">Условия договора</a> 
+                        </span>
+					</label>
+					<button class="modal-btn" type="submit">Отправить</button>
+                </div>    
+                </form>
+                </div>
                 </div>
             </div>
             
@@ -364,8 +413,7 @@ referrerpolicy="no-referrer"/>
     </main>
         <!-- Секція Футер-->
         <footer class="footer">
-            <div class="container">
-                <div class="footer-text">
+            <div class="footer-text container">
                     <div class="footer-two">
                         <a class="footer-logo link" href="./index.html">Web<span class="footer-logo-accent">Studio</span></a>
                             <address class="address">
@@ -415,7 +463,18 @@ referrerpolicy="no-referrer"/>
                                 </li>
                             </ul>
                     </div>
-                </div> 
+                    <div class="footer-form">
+                        <h2 class="footer-title">Подпишитесь на рассылку</h2>
+                        <form class="footer-forms">
+                            <label class="footer-user-action">
+                                <input class="footer-input" type="text" name="user-email" placeholder="E-mail">
+                            </label>
+                            <button class="user-btn" type="submit">Подписаться<svg class="footer-btn" width="24" height="24">
+                            <use href="./images/icons.svg#icon-icon-send"></use> 
+                            </svg>
+                            </button>
+                        </form>
+                    </div>
             </div>
         </footer>
         <script src="./js/modal.js"></script>
